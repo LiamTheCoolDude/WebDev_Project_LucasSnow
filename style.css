@@ -1,6 +1,25 @@
+/*
+Colour Palett:
+
+White:         #FFFFFF
+White Shadow:  #FFFCE9
+Main:          #104BC2
+Highlight:     #F0F5FF
+Shadow:        #0A2D74
+Accent:        #FFAA00
+Accent Shadow: #DE980E
+
+*/
+
 body {
     text-align: center;
-    font-family: 'Fira Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-family: 'B612', sans-serif;
+    margin:0%;
+    margin-bottom: 0px;
+    height: 100%;
+    background-color: #FFFFFF;
 }
 
 a:link {
@@ -16,6 +35,7 @@ a:visited {
 /* mouse over link */
 a:hover {
     color: rgb(82, 169, 251);
+    transition: 0.05s;
 }
 
 /* selected link */
@@ -23,33 +43,44 @@ a:active {
     color: black;
 }
 
-.logo {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: black;
-    font-family: 'Alfa Slab One', serif;
-    font-weight: 200;
-}
-
-#title {
-    font-size: 40px;
-}
-
-#subtitle {
-    font-size: 15px;
-}
-
 .navbar {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    width: 98%;
+    height: 50px;
+    margin: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     text-align: center;
     align-items: center;
-    justify-content: center;
-    margin-top: 15px;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    text-align: left;
+    color: black;
+    font-family: 'B612', sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.logo:hover {
+    color: #000000; 
+}
+
+.navright {
+    width: 50%;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    text-align: last;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .navbar a {
@@ -59,12 +90,64 @@ a:active {
   line-height: 40px;
 }
 
-.navbar h2 {
-  font-size: 20px; /* Set both to the same size */
-  font-weight: 600;
-  margin: 0; 
-  line-height: 40px;
+.main {
+    background-color: #0A2D74;
+    height: 300px;
+    padding: 45px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 15px;
 }
+
+.main a {
+    height: 50px;
+    width: 200px;
+    background-color: #FFAA00;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #0A2D74;
+    font-weight: 700;
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+    border-style: solid;
+    border-color: #DE980E;
+    border-width: 2px;
+}
+
+.mainabout {
+
+    background-color: #0A2D74;
+    height: 150px;
+    padding: 45px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+#title {
+    font-size: 20px;
+    color: #F0F5FF;
+}
+
+#slogan {
+    font-size: 40px;
+    color: #FFFCE9;
+}
+
+#description {
+    font-size: 20px;
+    color: #F0F5FF;
+}
+
 
 #contactme {
     font-size: 40px;
@@ -74,22 +157,121 @@ img {
     width:200px;
     height: 150px;
     padding: 30px;
+    border-radius: 15px;
 }
 
 .places {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.placestitle {
+    height: 60px;
+}
+
+.placescontent {
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    width: 1300px;
+}
+
+.placessections {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #a0e6fb;
+    border-radius: 15px;
+    height: 225px;
+    width: 200px;
+    padding: 20px;
+}
+
+.placessections:hover {
+    background-color: #0A2D74;
+    color: #FFFCE9;
+    transition: 0.05s;
+}
+
+.placessections img {
+    width: 200px;
+    height: 150px;
+    padding: 0px;
+    border-radius: 20px;
+}
+
+.placessections p {
+    width: 175px;
+    margin: 5px;
+    margin-top: 15px;
+    font-size: 17px;
+    display: flex;
     justify-content: center;
 }
 
 .clients {
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    margin-bottom: 40px;
+    height: 275px;
+    padding: 15px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #FFFCE9;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FFAA00;
+}
+
+.clientstitle {
+    height: 80px;
+}
+
+.clientstories {
+    width: 1590px;
+    padding: 20px;
+    display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.client1 {
+    padding: 15px;
+    text-align: justify;
+    background-color: #FFFEFC;
+    width: 47%;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFAA00;
+}
+
+.client2 {
+    padding: 15px;
+    text-align: justify;
+    background-color: #FFFEFC;
+    width: 47%;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFAA00;
 }
 
 .mystory{
@@ -97,6 +279,8 @@ img {
     flex-direction: row;
     text-align: center;
     justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .contact {
@@ -109,11 +293,19 @@ img {
 }
 
 #aboutimg {
-    height: 100%;
+    height: 400px;
+    width: 350px;
 }
 
 footer {
-    color: rgb(148, 212, 209);
+    margin: 0px;
+    padding: 15px;
+    padding-bottom: 30px;
+    background-color: #0A2D74;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #F0F5FF;
     font-size: 10px;
-    margin-bottom: 30px;
 }
