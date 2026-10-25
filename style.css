@@ -226,6 +226,7 @@ img {
     text-align: center;
     align-items: center;
     justify-content: space-around;
+    width: auto;
     margin: 20px;
     margin-bottom: 40px;
     height: 275px;
@@ -244,7 +245,7 @@ img {
 }
 
 .clientstories {
-    width: 1590px;
+    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -253,22 +254,12 @@ img {
     justify-content: space-around;
 }
 
-.client1 {
+.clientstiles {
     padding: 15px;
     text-align: justify;
     background-color: #FFFEFC;
-    width: 25%;
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #FFAA00;
-}
-
-.client2 {
-    padding: 15px;
-    text-align: justify;
-    background-color: #FFFEFC;
-    width: 25%;
+    width: 35%;
+    margin: 0px;
     border-radius: 15px;
     border-style: solid;
     border-width: 1px;
