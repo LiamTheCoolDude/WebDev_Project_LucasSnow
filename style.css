@@ -86,7 +86,7 @@ a:active {
 }
 
 .navbar a {
-  font-size: 20px; /* Set both to the same size */
+  font-size: 20px;
   font-weight: 600;
   margin: 0px; 
   line-height: 40px;
@@ -220,19 +220,19 @@ img {
     justify-content: center;
 }
 
-.clients {
+.clients { /*2. css box model example*/
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: space-around;
     width: auto;
-    margin: 20px;
-    margin-bottom: 40px;
     height: 275px;
     padding: 15px;
     padding-top: 45px;
     padding-bottom: 45px;
+    margin: 20px;
+    margin-bottom: 40px;
     background-color: #FFFCE9;
     border-radius: 15px;
     border-style: solid;
@@ -360,6 +360,12 @@ img {
     font-size: 20px;
 }
 
+.bgimg { /*3. background image*/
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/images/st\ anton.avif");
+    background-size: auto;
+    background-position: bottom;
+}
+
 .maincontact {
     background-color: #0A2D74;
     height: 150px;
@@ -374,15 +380,14 @@ img {
 }
 
 .contact {
+    color: #FFFFFF;
+    font-weight: 700;
     padding: 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
 }
 
 .contactbox {
@@ -394,9 +399,6 @@ img {
     font-size: 22px;
     align-items: flex-start;
     justify-content: space-between;
-    border-style: solid;
-    border-width: 1px;
-    border-color: green;
 }
 
 .contactbox p {
@@ -423,10 +425,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
-    margin-bottom: 15px;
 }
 
 #messagebox {
@@ -457,9 +455,6 @@ img {
     width: 45%;
     align-items: flex-start;
     justify-content: flex-start;
-    border-style: solid;
-    border-width: 1px;
-    border-color: blue;
 }
 
 footer {
