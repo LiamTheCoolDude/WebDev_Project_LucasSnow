@@ -361,7 +361,7 @@ img {
 }
 
 .bgimg { /*3. background image*/
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("/images/st\ anton.avif");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("images/st\ anton.avif");
     background-size: auto;
     background-position: bottom;
 }
