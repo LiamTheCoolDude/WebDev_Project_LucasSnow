@@ -402,7 +402,7 @@ img {
 }
 
 .contactbox p {
-    margin: 0px;
+    margin: 10px 0px 5px 0px;
 }
 
 .contactbox input {
@@ -412,7 +412,7 @@ img {
     border-radius: 15px;
     border-color: #0A2D74;
     text-decoration: none;
-    padding: 0px;
+    padding: 0px 10px;
     display: flex;
     text-align: start;
     justify-content: flex-start;
@@ -428,7 +428,17 @@ img {
 }
 
 #messagebox {
+    width: 103%;
     height: 150px;
+    min-height: 150px;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: #0A2D74;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 16px;
 }
 
 .contactboxsections a {
@@ -439,6 +449,7 @@ img {
     border-style: solid;
     border-color: #DE980E;
     border-width: 2px;
+    margin: 25px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
